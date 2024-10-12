@@ -1,0 +1,136 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+}
+
+/* Navigation */
+.header {
+    padding: 20px;
+    background-color: #111111; /* Slightly lighter black for contrast */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: italic;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff4081; /* Pink accent color for hover */
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #000000; /* Pure black background */
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.hero-content .name {
+    color: #ff4081; /* Accent color for name */
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #dddddd;
+}
+
+.cta-btn {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #ff4081;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #ff4d94;
+    transform: translateY(-5px);
+}
+
+/* Profile Picture Styling */
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #ff4081;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.profile-picture:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #111111;
+    color: #ffffff;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ff4081;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .cta-btn {
+        padding: 8px 20px;
+    }
+
+    .profile-picture {
+        width: 120px;
+        height: 120px;
+    }
+}
