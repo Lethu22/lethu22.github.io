@@ -14,7 +14,7 @@ body {
 
 /* Navigation */
 .header {
-    padding: 16px;
+    padding: 15px;
     background-color: #111111; /* Slightly lighter black for contrast */
 }
 
@@ -97,7 +97,7 @@ body {
 
 /* Footer */
 footer {
-    padding: 20px;
+    padding: 14px;
     text-align: center;
     background-color: #111111;
     color: #ffffff;
