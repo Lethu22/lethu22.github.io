@@ -1,0 +1,189 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills</title>
+    <style>
+
+
+/* Navigation */
+.header {
+    padding: 15px;
+    background-color: #111111; /* Slightly lighter black for contrast */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: italic;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff4081; /* Pink accent color for hover */
+}
+        /* Base styling for body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Center the content within the page */
+        .skills-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #000000;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(223, 41, 141, 0.952);
+        }
+
+        h2 {
+            color: #fff;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        /* Skill section styling */
+        .skills-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        /* Individual skill block */
+        .skill {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fafafa;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px #ee0ab51a;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skill:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(241, 14, 90, 0.2);
+        }
+
+        .skill img {
+            margin-right: 10px;
+        }
+
+        .skill span {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #333;
+        }
+
+        /* Footer */
+/* Footer */
+footer {
+    padding: 18px;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.social-links {
+    margin-top: 3px;
+}
+
+.social-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 14px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ff4081;
+}
+    </style>
+</head>
+<body>
+     <!-- Navigation -->
+     <header class="header">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../portfolio/index.html">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="../portfolio/skills.html">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="../portfolio/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="skills-container">
+        <h2>My Skills</h2>
+        <section class="skills-section">
+            <div class="skill">
+                <img src="https://img.icons8.com/color/64/java-coffee-cup-logo.png" alt="Java Icon" width="32" height="32">
+                <span>Java</span>
+            </div>
+            <div class="skill">
+                <img src="https://img.icons8.com/color/64/css3.png" alt="CSS Icon" width="32" height="32">
+                <span>CSS</span>
+            </div>
+            <div class="skill">
+                <img src="https://img.icons8.com/color/64/html-5.png" alt="HTML Icon" width="32" height="32">
+                <span>HTML</span>
+            </div>
+            <div class="skill">
+                <img src="https://img.icons8.com/color/64/javascript.png" alt="JavaScript Icon" width="32" height="32">
+                <span>JavaScript</span>
+            </div>
+            <div class="skill">
+                <img src="https://img.icons8.com/officel/64/php-logo.png" alt="PHP Icon" width="32" height="32">
+                <span>PHP</span>
+            </div>
+
+            <div class="skill">
+                <img src="https://img.icons8.com/color/64/mongodb.png" alt="MongoDB Icon" width="32" height="32">
+                <span>MongoDB</span>
+            </div>
+            <div class="skill">
+                <img src="https://img.icons8.com/color/64/mysql-logo.png" alt="MySQL Icon" width="32" height="32">
+                <span>MySQL</span>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+    
+
+     <!-- Footer -->
+     <footer>
+        <p>Designed & Built by Lethu Precious Vilakazi © 2024</p>
+        <div class="social-links">
+            <a href="https://github.com/dashboard" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
+
+          
+        </div>
+    </footer>
+</body>
+</html>
+
