@@ -1,0 +1,115 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+/* Welcome screen container */
+.welcome-container {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/* Text animation: sliding in */
+.animated-text {
+    font-size: 4rem;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 2s forwards;
+}
+
+#sub-text {
+    font-size: 2rem;
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideInFromRight 2.5s forwards;
+}
+
+/* Keyframes for the slide-in effect */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Background animation */
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Animating background gradient */
+body {
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    background-size: 200% 200%;
+    animation: gradientBackground 10s ease infinite;
+}
+
+/* Loading Screen */
+.loading-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.952); /* Dark transparent background */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+/* Loading text styles */
+.loading-text h1 {
+    color: rgba(245, 27, 198, 0.815);
+    font-size: 4rem;
+    font-weight: 200;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="pstyle.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Navigation */
+        .header {
+            padding: 15px;
+            background-color: #111111;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: italic;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ff4081;
+        }
+
+        /* Base styling for body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Project container styling */
+        .projects-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #000000;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(223, 41, 141, 0.952);
+        }
+
+        h2 {
+            color: #fff;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .project {
+            margin-bottom: 40px;
+            background-color: #fafafa;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .project h3 {
+            color: #333;
+        }
+
+        .project img {
+            display: block;
+            max-width: 100%;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #ff4081;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin: 0 10px;
+        }
+
+        .btn:hover {
+            background-color: #e60073;
+        }
+
+        /* Footer */
+        footer {
+            padding: 16px;
+            text-align: center;
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        .social-links {
+            margin-top: 3px;
+        }
+
+        .social-links a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 14px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #ff4081;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../portfolio/index.html">Home</a></li>
+                <li><a href="../portfolio/">About Me</a></li>
+                <li><a href="../portfolio/skills.html">Skills</a></li>
+                <li><a href="../portfolio/projects.html">Projects</a></li>
+                <li><a href="../portfolio/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Projects Section -->
+    <div class="projects-container">
+        <h2>My Projects</h2>
+
+        <!-- Project 1: JavaScript Calculator -->
+        <div class="project">
+            <h3>JavaScript Calculator</h3>
+            <img src="calculator.png" alt="JavaScript Calculator Project" class="project-image">
+            <p>This calculator is a web-based application created using HTML, CSS, and JavaScript, allowing users to perform basic arithmetic operations in a user-friendly interface.</p>
+            <div class="buttons">
+                <a href="https://lethu22.github.io/calculator/" class="btn">Live Demo</a>
+                <a href="https://github.com/Lethu22/calculator.git" class="btn">View Code on GitHub</a>
+            </div>
+        </div>
+
+        <!-- Project 2: Vilakazi Eggs -->
+        <div class="project">
+            <h3>Vilakazi Eggs - Egg Ordering Website</h3>
+            <img src="vilakazi.png" alt="Vilakazi Eggs Project Screenshot" class="project-image">
+            <p>Vilakazi Eggs is a specialized web application designed for ordering egg-related products, with a clean and intuitive design. Built using HTML, CSS, and JavaScript, the platform offers easy product browsing and cart functionality.</p>
+            <div class="buttons">
+                <a href="https://lethu22.github.io/vilakazi_eggs/" class="btn">Live Demo</a>
+                <a href="https://github.com/Lethu22/vilakazi_eggs.git" class="btn">View Code on GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Designed & Built by Lethu Precious Vilakazi © 2024</p>
+        <div class="social-links">
+            <a href="https://github.com/dashboard" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>

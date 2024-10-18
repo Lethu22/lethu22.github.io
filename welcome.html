@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | Lethu Vilakazi Portfolio</title>
+    <link rel="stylesheet" href="wstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="welcome-container">
+        <h1 class="animated-text" id="welcome-text">Welcome</h1>
+        <h2 class="animated-text" id="sub-text">to </h2>
+        <h2 class="animated-text" id="sub-text">my Portfolio</h2>
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-text">
+            <h1 id="percentage">0%</h1>
+        </div>
+    </div>
+
+    <script>
+        // Slide-in animation timing
+        setTimeout(function() {
+            document.getElementById('loading-screen').style.display = 'flex';
+            startLoading();
+        }, 2000);
+
+        // Function to simulate loading progress
+        function startLoading() {
+            let percentage = 0;
+            let loadingText = document.getElementById('percentage');
+            
+            let interval = setInterval(function() {
+                if (percentage < 100) {
+                    percentage++;
+                    loadingText.textContent = percentage + '%';
+                } else {
+                    clearInterval(interval);
+                    // Redirect to home page once loading reaches 100%
+                    window.location.href = 'index.html'; // your home page
+                }
+            }, 50); // Update every 50ms to get a 5-second loading duration
+        }
+    </script>
+</body>
+</html>
